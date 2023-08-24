@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sean O'Sullivan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <style>
+
+
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #141E46;
+            }
+
+            .navigation-bar {
+                background-color: #BB2525;
+                width: 1fr;
+                height: 75px;
+                padding-left: 16;
+                padding-right: 16;
+                padding-top: 16;
+                padding-bottom: 16;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.35);
+            }
+
+            .home-button {
+                text-align: center;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFF5E0;
+                width: fit-content;
+                background-color: transparent;
+                border: 0;
+                margin-top: 25px;
+                margin-left: 20px;
+                vertical-align: middle;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-buttons {
+                
+                vertical-align: middle;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 30px;
+                margin-top: 20px;
+                column-gap: 30px;
+                margin-right: 20px;
+                
+            }
+
+            .menu-button {
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: transparent;
+                transition: color 0.24s;
+                border: 0;
+                border-radius: 6px;
+                color: #FFF5E0;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-button:hover{
+                box-shadow: 0px 1px 1px FF6969;
+                color: #FF6969;
+                
+            }
+
+
+
+            .projects-title {
+                text-align: center;
+                margin-top: 100px;
+                font-family: ubuntu;
+                font-size: 30px;
+                color: #FFF5E0;
+            }
+
+            .projects-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                row-gap: 10px;
+                
+            }
+
+            .project-cell {
+                background-color: #BB2525;
+                margin-bottom: 50px;
+                box-shadow: 0px 3px 5px rgba(0,0,0,0.65);
+                aspect-ratio: 1.6/1;
+                border-radius: 6px;
+                font-weight: 500;
+                
+            }
+
+           
+
+            .project-description {
+                text-align: left;
+                font-family: ubuntu;
+                font-size: 14px;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 10px;
+                line-height: 30px;
+                color: #BB2525;
+                font-weight: 500;
+                
+            }
+
+            .project-image {
+                text-align: center;
+                font-family: ubuntu;
+                color: #FFF5E0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .description-split {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                column-gap: 20px;
+                
+            }
+
+            .code-link {
+                font-family: ubuntu;
+                color: #141E46;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 15px;
+                background-color: #FFF5E0;
+                border-radius: 4px;
+                height: 180px;
+                margin-top: 15px;
+                transition: transform 0.3s;
+                cursor: pointer;
+                
+            }
+
+            .code-link:hover {
+                transform: scale(1.05);
+
+            }
+
+            .code-link-ref {
+                text-decoration: none;
+                color: #141E46;
+            }
+
+            .description-title {
+                font-family: ubuntu;
+                color: #141E46;
+                text-align: center;
+                margin-top: 30px;
+                font-size: 18px;
+            }
+
+            .description-text {
+                background-color: #FFF5E0;
+                border-radius: 4px;
+                margin-left: 15px;
+                margin-top: 15px;
+                padding-bottom: 10px;
+            }
+
+            .material-icons {
+                font-size: 100px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation-bar">
+                    <div class="name">
+                       <button class="home-button">
+                        <a href="personal-website.html" class="home-button">
+                            SEAN O'SULLIVAN
+                        </a>  
+                        </button>
+                    </div>
+                        <div class="menu-buttons">
+                            <button class="menu-button">
+                                <a href="about.html" class="menu-button">
+                                    About
+                                </a>                            
+                            </button>
+                            <button class="menu-button">
+                                <a href="projects.html" class="menu-button">
+                                    Projects
+                                </a>  
+                            </button>
+                            <button class="menu-button">
+                                <a href="contact.html" class="menu-button">
+                                    Contact
+                                </a>  
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <p class="projects-title">
+            Projects
+        </p>
+        <div class="projects-grid">
+            <div class="project-cell">
+                
+                <p class="project-image">
+                    Block Maze Solver
+                </p>
+                <div class="description-split">
+                    <div class="description-text">
+                        <p class="project-description">
+                            Language: Python
+                        </p>
+                        <p class="description-title">
+                            Description
+                        </p>
+                        <p class="project-description">
+                            A python program that finds the shortest solution to a rolling block maze using A* search.
+                            The program also has the option to choose between two heuristics.
+                        </p>
+                    </div>
+                   
+                    <div class="code-link">
+                        <a href="https://github.com/seanosully/BlockMaze-Solver" target="_blank" class="code-link-ref">
+                            <p>
+                                View Code  
+                            </p>
+                            <i class="material-icons">code</i>
+                        </a>
+                   </div>
+
+                </div>
+                
+            </div>
+
+            <div class="project-cell">
+                <p class="project-image">
+                    Decision Tree Classifier
+                </p>
+                <div class="description-split">
+                    <div class="description-text">
+                        <p class="project-description">
+                            Language: Python
+                        </p>
+                        <p class="description-title">
+                            Description
+                        </p>
+                        <p class="project-description">
+                            A desicion tree classifier that implements the ID3 decision tree learning algorithm. It also has the option for chi-square pruning.
+                        </p>
+                    </div>
+                   <div class="code-link">
+                        <a href="https://github.com/seanosully/BlockMaze-Solver" target="_blank" class="code-link-ref">
+                            <p>
+                             View Code  
+                            </p>
+                            <i class="material-icons">code</i>
+                        </a>
+                   </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="project-cell">
+                <p class="project-image">
+                    Wordle Bot
+                </p>
+                <div class="description-split">
+                    <div class="description-text">
+                        <p class="project-description">
+                            Language: Python
+                        </p>
+                        <p class="description-title">
+                            Description
+                        </p>
+                        <p class="project-description">
+                            A bot designed to solve daily Wordle puzzles. The user has the option to have the program solve a word that is known to the user,
+                            or help the user solve an unknown puzzle.
+                        </p>
+                    </div>
+                   
+                    <div class="code-link">
+                        <a href="https://github.com/seanosully/Wordle-Bot" target="_blank" class="code-link-ref">
+                            <p>
+                                View Code  
+                            </p>
+                            <i class="material-icons">code</i>
+                        </a>
+                   </div>
+
+                </div>
+                
+            </div>
+
+            <div class="project-cell">
+                <p class="project-image">
+                    Light Up Maze Solver
+                </p>
+                <div class="description-split">
+                    <div class="description-text">
+                        <p class="project-description">
+                            Language: Python
+                        </p>
+                        <p class="description-title">
+                            Description
+                        </p>
+                        <p class="project-description">
+                            A program designed to solve light-up puzzles which uses CNF logic and implements the Glucose SAT solver.
+                        </p>
+                    </div>
+                   
+                    <div class="code-link">
+                        <a href="https://github.com/seanosully/Lightup-Maze-Solver" target="_blank" class="code-link-ref">
+                            <p>
+                                View Code  
+                            </p>
+                            <i class="material-icons">code</i>
+                        </a>
+                   </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

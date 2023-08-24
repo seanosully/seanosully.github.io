@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sean O'Sullivan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+
+
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #141E46;
+            }
+
+
+            .navigation-bar {
+                background-color: #BB2525;
+                width: 1fr;
+                height: 75px;
+                padding-left: 16;
+                padding-right: 16;
+                padding-top: 16;
+                padding-bottom: 16;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.35);
+            }
+
+            .home-button {
+                text-align: center;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFF5E0;
+                width: fit-content;
+                background-color: transparent;
+                border: 0;
+                margin-top: 25px;
+                margin-left: 20px;
+                vertical-align: middle;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-buttons {
+                
+                vertical-align: middle;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 30px;
+                margin-top: 20px;
+                column-gap: 30px;
+                margin-right: 20px;
+                
+            }
+
+            .menu-button {
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: transparent;
+                transition: color 0.24s;
+                border: 0;
+                border-radius: 6px;
+                color: #FFF5E0;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-button:hover{
+                box-shadow: 0px 1px 1px FF6969;
+                color: #FF6969;
+                
+            }
+
+            .about-sections{
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 60px;
+                margin-left: 80px;
+                font-family: ubuntu;
+                font-size: 20px;
+                color: #FFF5E0;
+                line-height: 30px;
+                font-weight: 300;
+                
+            }
+
+            .programming-languages {
+                margin-left: 60px;
+
+            }
+
+            .languages-title {
+                text-align: center;
+                font-size: 24px;
+                color: #FF6969;
+                
+            }
+
+            .language-columns {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+                margin-right: 30px;
+                margin-left: 30px;
+
+            }
+
+            .course-columns {
+                margin-top: 30px;
+                text-align: left;
+                margin-left: 130px;
+                line-height: 35px;
+
+            }
+
+            .about-paragraph {
+                margin-top: 50px;
+                line-height: 35px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation-bar">
+                    <div class="name">
+                       <button class="home-button">
+                        <a href="personal-website.html" class="home-button">
+                            SEAN O'SULLIVAN
+                        </a>  
+                        </button>
+                    </div>
+                    <div class="menu-buttons">
+                        <button class="menu-button">
+                            <a href="about.html" class="menu-button">
+                                About
+                            </a>                            
+                        </button>
+                        <button class="menu-button">
+                            <a href="projects.html" class="menu-button">
+                                Projects
+                            </a>  
+                        </button>
+                        <button class="menu-button">
+                            <a href="contact.html" class="menu-button">
+                                Contact
+                            </a>  
+                        </button>
+                    </div>
+                </div>
+
+                <div class="about-sections">
+
+                        <p class="about-paragraph">
+                            I am a recent graduate from the College of the Holy Cross where I studied computer science and economics. 
+                            At Holy Cross I also worked as a teaching assistant for various computer sciences courses. 
+                            As a teaching assistant I was able to assist students in labs and office hours as well as grade homework and projects. 
+                            This position was an incredibly rewarding experience to be able to connect with and be a resourse to other driven students.
+                            Outside of the classroom I enjoyed playing on the club rugby team and was a member of the Cures for Kids club where we raised money to combat childhood cancer.
+                    <br>
+                    <br>
+                    I am currently furthering my knowledge as a programmer by working on various presonal projects and learning new technologies. 
+                    I have a strong desire to learn and to problem solve. As of recent I've really enjoyed performing data analysis and data manipulation using Pandas.
+                        </p>
+                        <div class="programming-languages">
+                           <p class="languages-title">
+                            Languages
+                           </p>
+
+                           <div class="language-columns">
+                                <p>
+                                    &#183; Python <br> &#183; Java <br> &#183; C++ <br> &#183; Lua
+                                </p>
+                                <p>
+                                    &#183; HTML <br> &#183; CSS <br> &#183; SQL <br> &#183; Bash  
+                                </p>
+
+                           </div>
+
+                           <p class="languages-title">
+                            Course Highlights
+                           </p>
+
+                           <div class="course-columns">
+                            <p>
+                                &#183; Artificial Intelligence <br> &#183; Software Development <br> &#183; Programming Languages <br> &#183; Programming with Big Data 
+                            </p>
+                            
+                       </div>
+                           
+                        </div>
+                </div>
+                   
+                </div>
+            </nav>
+          </header>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sean O'Sullivan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+
+
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #141E46;
+            }
+
+
+            .navigation-bar {
+                background-color: #BB2525;
+                width: 1fr;
+                height: 75px;
+                padding-left: 16;
+                padding-right: 16;
+                padding-top: 16;
+                padding-bottom: 16;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.35);
+            }
+
+            .home-button {
+                text-align: center;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFF5E0;
+                width: fit-content;
+                background-color: transparent;
+                border: 0;
+                margin-top: 25px;
+                margin-left: 20px;
+                vertical-align: middle;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-buttons {
+                
+                vertical-align: middle;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 30px;
+                margin-top: 20px;
+                column-gap: 30px;
+                margin-right: 20px;
+                
+            }
+
+            .menu-button {
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: transparent;
+                transition: color 0.24s;
+                border: 0;
+                border-radius: 6px;
+                color: #FFF5E0;
+                cursor: pointer;
+                text-decoration: none;
+                width: 1fr;
+            }
+
+            .menu-button:hover{
+                
+                color: #FF6969;
+                
+            }
+
+            .contact-title {
+                margin-top: 60px;
+                margin-bottom: 60pxpx;
+                font-family: ubuntu;
+                font-weight: 300;
+                font-size: 50px;
+                color: #FFF5E0;
+                text-align: center;
+            }
+
+            .contact-list {
+                margin-top: 80px;
+                margin-left: 150px;
+                margin-right: 150px;
+
+            }
+
+            .github-logo {
+                vertical-align: top;
+                width: 100px;
+                border-radius: 100px;
+                transition: box-shadow 0.5s;
+                transition: transform 0.35s;
+                box-shadow: 0px 0px 0px 0px rgb(0,0,0,0.35);
+                
+            }
+
+            .github-logo:hover {
+                box-shadow: 0px 5px 8px 0px rgb(0,0,0,0.35);
+                transform: scale(1.06);
+            }
+
+            .email {
+                color: #FFF5E0;
+                font-family: ubuntu;
+                font-size: 20px;
+                text-align: center;
+                
+            }
+
+            .email-link {
+                color: #FF6969;
+                font-family: ubuntu;
+                font-size: 16px;
+            }
+
+            .social-links-title {
+                font-family: ubuntu;
+                font-size:20px;
+                margin-top: 100px;
+            }
+
+            .social-box {
+                margin: 0 auto;
+                
+            }
+
+            .social-box a {
+
+                text-decoration: none;
+            }
+
+            .contact-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+            }
+
+            .social-text {
+                font-family: ubuntu;
+                font-weight: 300;
+                font-size: 14px;
+                text-align: center;
+                color: #FFF5E0;
+                text-decoration: none;
+                margin-bottom: 25px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation-bar">
+                    <div class="name">
+                       <button class="home-button">
+                        <a href="personal-website.html" class="home-button">
+                            SEAN O'SULLIVAN
+                        </a>  
+                        </button>
+                    </div>
+                    <div class="menu-buttons">
+                        <button class="menu-button">
+                            <a href="about.html" class="menu-button">
+                                About
+                            </a>                            
+                        </button>
+                        <button class="menu-button">
+                            <a href="projects.html" class="menu-button">
+                                Projects
+                            </a>  
+                        </button>
+                        <button class="menu-button">
+                            <a href="contact.html" class="menu-button">
+                                Contact
+                            </a>  
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div>
+                    <p class="contact-title">Contact Me</p>
+                    <div class="email">
+                        <p>Via Email</p>
+                        <a href="mailto:sean13.osullivan@gmail.com" class="email-link">Sean13.osullivan@gmail.com</a>
+                        <p class="social-links-title">
+                            Social Links
+                        </p>
+                    </div>
+                    <div class="contact-list">
+                        <div class="social-box">
+                            <a href="https://github.com/seanosully" target="_blank">
+                                <p class="social-text">
+                                    Github
+                                </p>
+                                <img src="github-logo.png" class="github-logo">
+                            </a>
+                        </div>
+
+                        <div class="social-box">
+                            <a href="https://linkedin.com/in/seanosullivan13" target="_blank">
+                                <p class="social-text">
+                                    LinkedIn
+                                </p>
+                                <img src="linked-in-logo (1).png" class="github-logo">
+                            </a>
+                        </div>
+
+                        <div class="social-box">
+                            <a href="https://github.com/seanosully/Resume/blob/main/Sean%20O'Sullivan%20Resume.pdf" target="_blank">
+                                <p class="social-text">
+                                    Resume
+                                </p>
+                                <img src="document-round-icon.png" class="github-logo">
+                            </a>
+                        </div>
+                            <div class="social-box">
+                                <a href="https://leetcode.com/seanosully/" target="_blank">
+                                    <p class="social-text">
+                                        LeetCode
+                                    </p>
+                                    <img src="leetcode_logo (1).png" class="github-logo">
+                                </a>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          </header>
+    </body>
+</html>

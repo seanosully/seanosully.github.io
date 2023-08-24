@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sean O'Sullivan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #141E46;
+            }
+
+
+            .navigation-bar {
+                background-color: #BB2525;
+                width: 1fr;
+                height: 75px;
+                padding-left: 16;
+                padding-right: 16;
+                padding-top: 16;
+                padding-bottom: 16;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.35);
+            }
+
+            .home-button {
+                text-align: center;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 20px;
+                color: #FFF5E0;
+                width: fit-content;
+                background-color: transparent;
+                border: 0;
+                margin-top: 25px;
+                margin-left: 20px;
+                vertical-align: middle;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-buttons {
+                
+                vertical-align: middle;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 30px;
+                margin-top: 20px;
+                column-gap: 30px;
+                margin-right: 20px;
+                
+            }
+
+            .menu-button {
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: transparent;
+                transition: color 0.24s;
+                border: 0;
+                border-radius: 6px;
+                color: #FFF5E0;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .menu-button:hover{
+                box-shadow: 0px 1px 1px FF6969;
+                color: #FF6969;
+                
+            }
+
+            .portrait-photo {
+                width: 350px;
+
+                margin-left: 150px;
+                clip-path: ellipse(175px 175px at center 250px); 
+            }
+
+            .welcome-page {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 0px;
+                margin-top: 70px;
+                
+            }
+
+            .welcome-title {
+                margin-top: 70px;
+                font-family: ubuntu;
+                font-weight: 500;
+                font-size: 40px;
+                font-weight: 300;
+                color: #FFF5E0;
+            }
+
+            .welcome-content {
+                font-family: ubuntu;
+                font-weight: 300;
+                font-size: 20px;
+                font-weight: 300;
+                color: #FFF5E0;
+                width: 500px;
+                margin-left: 50px;
+                line-height: 30px;
+                margin-top: 60px;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navigation-bar">
+                    <div class="name">
+                       <button class="home-button">
+                        <a href="personal-website.html" class="home-button">
+                            SEAN O'SULLIVAN
+                        </a>  
+                        </button>
+                    </div>
+                    <div class="menu-buttons">
+                        <button class="menu-button">
+                            <a href="about.html" class="menu-button">
+                                About
+                            </a>                            
+                        </button>
+                        <button class="menu-button">
+                            <a href="projects.html" class="menu-button">
+                                Projects
+                            </a>  
+                        </button>
+                        <button class="menu-button">
+                            <a href="contact.html" class="menu-button">
+                                Contact
+                            </a>  
+                        </button>
+                    </div>
+                </div>
+            </nav>
+          </header>
+          <div class="welcome-page">
+            <img class = "portrait-photo" src="/Users/seanosullivan/Desktop/Senior Portrait.jpeg">
+            <div>
+                <p class="welcome-title">
+                    Welcome,
+                </p>
+                <p class="welcome-content">
+                    My name is <strong><span style="font-weight: 400;">Sean O'Sullivan</strong>. I recently graduated from the College of the Holy Cross with a bachelor's degree in computer science and economics.
+                    I am an aspiring software developer with a strong passion for technology and programming. Please browse around to learn more about me and my experience.
+                    
+                </p>
+            </div>
+
+          </div>
+
+    </body>
+</html>
